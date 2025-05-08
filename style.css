@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#alphabet-grid-container h2,
+#selected-letters-details-container h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.letter-button {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 1.2em;
+}
+
+.letter-button:hover {
+    background-color: #e9e9e9;
+}
+
+.letter-button.selected {
+    background-color: #add8e6; /* Light blue for selected */
+    border-color: #87ceeb;
+    transform: scale(0.95);
+}
+
+.no-selection {
+    color: #777;
+    font-style: italic;
+}
+
+.letter-detail-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.letter-detail-card h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.letter-info p {
+    margin: 5px 0;
+}
+
+.variants-section h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #666;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+.variant-category {
+    margin-bottom: 15px;
+}
+
+.variant-case-group {
+    margin-left: 10px; /* Indent case groups */
+}
+.variant-case-group h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #444;
+}
+
+.variant-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.variant-images img {
+    max-width: 80px; /* Adjust as needed */
+    max-height: 80px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    object-fit: contain; /* Ensures image aspect ratio is maintained */
+}
+
+.variant-images figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.variant-images figcaption {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 3px;
+    text-align: center;
+}
